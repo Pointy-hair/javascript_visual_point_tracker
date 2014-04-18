@@ -1,0 +1,1 @@
+emcc -O2  -DMONO_THREAD -DNO_OPENMP -std=c++11 -DNO_CUDA -I ~/projects/cuimg -I /usr/include main.cc -o main.js  -s TOTAL_MEMORY=33554432  -s EXPORTED_FUNCTIONS="['_get_frame','_malloc','_free','_get_points','_set_threshold','_get_vectors','_get_flow_colors']"
